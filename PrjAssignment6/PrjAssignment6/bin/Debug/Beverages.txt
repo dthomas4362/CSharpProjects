@@ -1,0 +1,6 @@
+Soda $1.95
+Tea $1.50
+Coffee $1.25
+Mineral Water $2.95
+Juice $2.50
+Milk $1.50

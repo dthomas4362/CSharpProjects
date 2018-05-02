@@ -1,0 +1,20 @@
+C:\Users\nham4\Documents\Visual Studio 2017\Projects\PrjAssignment6\PrjAssignment6\bin\Debug\PrjAssignment6.exe.config
+C:\Users\nham4\Documents\Visual Studio 2017\Projects\PrjAssignment6\PrjAssignment6\bin\Debug\PrjAssignment6.exe
+C:\Users\nham4\Documents\Visual Studio 2017\Projects\PrjAssignment6\PrjAssignment6\bin\Debug\PrjAssignment6.pdb
+C:\Users\nham4\Documents\Visual Studio 2017\Projects\PrjAssignment6\PrjAssignment6\obj\Debug\PrjAssignment6.Form1.resources
+C:\Users\nham4\Documents\Visual Studio 2017\Projects\PrjAssignment6\PrjAssignment6\obj\Debug\PrjAssignment6.Properties.Resources.resources
+C:\Users\nham4\Documents\Visual Studio 2017\Projects\PrjAssignment6\PrjAssignment6\obj\Debug\PrjAssignment6.csproj.GenerateResource.Cache
+C:\Users\nham4\Documents\Visual Studio 2017\Projects\PrjAssignment6\PrjAssignment6\obj\Debug\PrjAssignment6.csproj.CoreCompileInputs.cache
+C:\Users\nham4\Documents\Visual Studio 2017\Projects\PrjAssignment6\PrjAssignment6\obj\Debug\PrjAssignment6.exe
+C:\Users\nham4\Documents\Visual Studio 2017\Projects\PrjAssignment6\PrjAssignment6\obj\Debug\PrjAssignment6.pdb
+C:\Users\nham4\Documents\Visual Studio 2017\Projects\PrjAssignment6\PrjAssignment6\obj\Debug\PrjAssignment6.csprojResolveAssemblyReference.cache
+C:\Users\konos\Downloads\PrjAssignment6\PrjAssignment6\PrjAssignment6\bin\Debug\PrjAssignment6.exe.config
+C:\Users\konos\Downloads\PrjAssignment6\PrjAssignment6\PrjAssignment6\bin\Debug\PrjAssignment6.exe
+C:\Users\konos\Downloads\PrjAssignment6\PrjAssignment6\PrjAssignment6\bin\Debug\PrjAssignment6.pdb
+C:\Users\konos\Downloads\PrjAssignment6\PrjAssignment6\PrjAssignment6\obj\Debug\PrjAssignment6.csprojResolveAssemblyReference.cache
+C:\Users\konos\Downloads\PrjAssignment6\PrjAssignment6\PrjAssignment6\obj\Debug\PrjAssignment6.Form1.resources
+C:\Users\konos\Downloads\PrjAssignment6\PrjAssignment6\PrjAssignment6\obj\Debug\PrjAssignment6.Properties.Resources.resources
+C:\Users\konos\Downloads\PrjAssignment6\PrjAssignment6\PrjAssignment6\obj\Debug\PrjAssignment6.csproj.GenerateResource.Cache
+C:\Users\konos\Downloads\PrjAssignment6\PrjAssignment6\PrjAssignment6\obj\Debug\PrjAssignment6.csproj.CoreCompileInputs.cache
+C:\Users\konos\Downloads\PrjAssignment6\PrjAssignment6\PrjAssignment6\obj\Debug\PrjAssignment6.exe
+C:\Users\konos\Downloads\PrjAssignment6\PrjAssignment6\PrjAssignment6\obj\Debug\PrjAssignment6.pdb
