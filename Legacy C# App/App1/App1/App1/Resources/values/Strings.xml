@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Hello World, Click Me!</string>
+    <string name="ApplicationName">App1</string>
+    <string name="tab1_title">Home</string>
+    <string name="tab2_title">Profile</string>
+    <string name="tab3_title">Messages</string>
+    <string name="tab4_title">Settings</string>
+</resources>

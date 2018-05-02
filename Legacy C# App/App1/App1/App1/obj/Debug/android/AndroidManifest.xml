@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="App1.App1" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="App1" android:icon="@drawable/logo" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <meta-data android:name="android.max_aspect" android:value="2.1" />
+    <activity android:label="Login" android:name="md5579855c995bdb073d8182511e793544c.Login" />
+    <activity android:label="UserDashboard" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5579855c995bdb073d8182511e793544c.UserDashboard" />
+    <activity android:noHistory="true" android:name="md5579855c995bdb073d8182511e793544c.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="SignUp" android:name="md5579855c995bdb073d8182511e793544c.SignUp" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="App1.App1.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.App1.App1" />
+      </intent-filter>
+    </receiver>
+    <meta-data android:name="android.support.VERSION" android:value="26.1.0" />
+    <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT" />
+  </application>
+</manifest>

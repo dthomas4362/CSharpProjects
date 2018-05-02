@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/signInUI">
+    <ImageView
+        android:src="@drawable/LogoSmall"
+        android:id="@+id/LogoSmall"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp" />
+    <RelativeLayout
+        android:id="@+id/relativeBody"
+        android:layout_height="wrap_content"
+        android:layout_width="327.5dp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/LogoSmall"
+        android:background="#fff"
+        android:layout_centerVertical="true">
+        <RelativeLayout
+            android:id="@+id/tabBody"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true">
+            <Button
+                android:id="@+id/signInTab"
+                android:layout_height="50dp"
+                android:background="#fff"
+                android:text="Sign In"
+                android:textColor="#6E6E6E"
+                android:textSize="15dp"
+                android:layout_width="164dp" />
+            <Button
+                android:id="@+id/signUpTab"
+                android:layout_width="164dp"
+                android:layout_height="50dp"
+                android:background="#C5C5C5"
+                android:text="Sign Up"
+                android:textColor="#6E6E6E"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/signInTab" />
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:textColor="#000"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#6c6c6c"
+            android:layout_below="@+id/tabBody"
+            android:paddingRight="25dp"
+            android:drawablePadding="10dip"
+            android:typeface="normal"
+            android:singleLine="true"
+            android:fontFamily="@string/abc_font_family_display_4_material"
+            android:drawableLeft="@drawable/iconEmail"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="7pt" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/emailInput"
+            android:id="@+id/separatorLine"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:textColor="#000"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#6c6c6c"
+            android:layout_below="@+id/emailInput"
+            android:paddingRight="25dp"
+            android:password="true"
+            android:singleLine="true"
+            android:fontFamily="@string/abc_font_family_display_4_material"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@drawable/iconPassword"
+            android:drawablePadding="10dip"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="7pt" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/passwordInput"
+            android:id="@+id/separatorLine"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+        <Button
+            android:id="@+id/continueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#EC535B"
+            android:text="Continue"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/passwordInput"
+            android:textAllCaps="true" />
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#1A247D"
+            android:layout_below="@+id/continueBtn"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/facebookBtn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Login with Facebook"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="#425BB4"
+        android:layout_below="@+id/relativeBody"
+        android:textAllCaps="false"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/twitterBtn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Login with Twitter"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="#34BBF0"
+        android:layout_below="@+id/facebookBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textAllCaps="false" />
+</RelativeLayout>

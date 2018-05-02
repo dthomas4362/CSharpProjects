@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/signUpUI">
+    <ImageView
+        android:src="@drawable/LogoSmall"
+        android:id="@+id/LogoSmall"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp" />
+    <RelativeLayout
+        android:id="@+id/relativeBody"
+        android:layout_height="wrap_content"
+        android:layout_width="327.5dp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/LogoSmall"
+        android:background="#fff"
+        android:layout_centerVertical="true">
+        <RelativeLayout
+            android:id="@+id/tabBody"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true">
+            <Button
+                android:id="@+id/signInTab"
+                android:layout_height="50dp"
+                android:background="#C5C5C5"
+                android:text="Sign In"
+                android:textColor="#6E6E6E"
+                android:textSize="15dp"
+                android:layout_width="164dp" />
+            <Button
+                android:id="@+id/signUpTab"
+                android:layout_width="164dp"
+                android:layout_height="50dp"
+                android:background="#fff"
+                android:text="Sign Up"
+                android:textColor="#6E6E6E"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/signInTab" />
+        </RelativeLayout>
+    <!-- EMAIL INPUT TEXT FIELD -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="327.5dp"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:textColor="#000"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#6c6c6c"
+            android:layout_below="@+id/tabBody"
+            android:drawablePadding="10dip"
+            android:fontFamily="@string/abc_font_family_display_4_material"
+            android:drawableLeft="@drawable/iconEmail"
+            android:textSize="6pt"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="1dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/emailInput"
+            android:id="@+id/separatorLine"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+    <!-- PASSWORD INPUT TEXT FIELDS -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:textColor="#000"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#6c6c6c"
+            android:layout_below="@+id/emailInput"
+            android:drawablePadding="10dip"
+            android:fontFamily="@string/abc_font_family_display_4_material"
+            android:drawableLeft="@drawable/iconPassword"
+            android:textSize="6pt"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp" />
+        <EditText
+            android:id="@+id/confirmPasswordInput"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:textColor="#000"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColorHint="#6c6c6c"
+            android:layout_below="@+id/emailInput"
+            android:layout_toRightOf="@id/passwordInput"
+            android:drawablePadding="10dip"
+            android:fontFamily="@string/abc_font_family_display_4_material"
+            android:drawableLeft="@drawable/iconPassword"
+            android:textSize="6pt"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="1dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/passwordInput"
+            android:id="@+id/separatorLine"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+    <!-- NAME INPUT TEXT FIELDS -->
+        <EditText
+            android:id="@+id/firstNameInput"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:textColor="#000"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:textColorHint="#6c6c6c"
+            android:layout_below="@+id/passwordInput"
+            android:drawablePadding="10dip"
+            android:fontFamily="@string/abc_font_family_display_4_material"
+            android:drawableLeft="@drawable/iconUser"
+            android:textSize="6pt"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp" />
+        <EditText
+            android:id="@+id/lastNameInput"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:textColor="#000"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:textColorHint="#6c6c6c"
+            android:drawablePadding="10dip"
+            android:fontFamily="@string/abc_font_family_display_4_material"
+            android:drawableLeft="@drawable/iconUser"
+            android:textSize="6pt"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/confirmPasswordInput"
+            android:layout_toRightOf="@+id/firstNameInput" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/firstNameInput"
+            android:id="@+id/separatorLine"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+    <!-- DOB + GENDER SELECTION FIELDS -->
+        <EditText
+            android:id="@+id/dobInput"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:textColor="#000"
+            android:hint="Date Of Birth"
+            android:inputType="date"
+            android:textColorHint="#6c6c6c"
+            android:drawablePadding="10dip"
+            android:fontFamily="@string/abc_font_family_display_4_material"
+            android:drawableLeft="@drawable/iconUser"
+            android:textSize="6pt"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/firstNameInput"
+            android:editable="false"
+            android:clickable="true"
+            android:focusable="false" />
+    <!-- CREATE ACCOUNT BUTTON -->
+        <Button
+            android:id="@+id/createAcctBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#EC535B"
+            android:text="Create Account"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:textAllCaps="true"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>
