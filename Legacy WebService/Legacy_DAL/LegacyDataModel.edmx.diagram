@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bd246503d7a449ada26f2992a8cc1a7e" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="DB_42039_legacyModel.politic" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.religion" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.address" Width="1.5" PointX="5.25" PointY="12.875" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.admin_associates" Width="1.5" PointX="7.5" PointY="24.375" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.associate" Width="1.5" PointX="7.5" PointY="21.75" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.country" Width="1.5" PointX="0.75" PointY="13.125" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.gender" Width="1.5" PointX="3" PointY="9.625" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.hobby" Width="1.5" PointX="5.25" PointY="8.75" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.job" Width="1.5" PointX="5.25" PointY="15.875" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.message" Width="1.5" PointX="10.5" PointY="0.75" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.messagetype" Width="1.5" PointX="8.25" PointY="10.125" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.school" Width="1.5" PointX="8.25" PointY="13" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.state" Width="1.5" PointX="3" PointY="13" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.user_addresses" Width="1.5" PointX="7.5" PointY="4" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.user_types" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.user" Width="1.5" PointX="5.25" PointY="1.875" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.users_hobbies" Width="1.5" PointX="7.5" PointY="1" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.users_jobs" Width="1.5" PointX="7.5" PointY="7" />
+        <EntityTypeShape EntityType="DB_42039_legacyModel.users_schools" Width="1.5" PointX="10.5" PointY="4" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_addresses_states" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_user_addresses_addresses" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_admin_associates_users" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_admin_associates_users1" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_associates_users" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_associates_users1" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_states_countries" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_users_genders" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_users_hobbies_hobbies" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_users_jobs_jobs" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_messages_messagetypes" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_messages_users" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_users_politics" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_users_religions" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_users_schools_schools" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_user_addresses_users" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_users_user_types" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_users_hobbies_users" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_users_jobs_users" />
+        <AssociationConnector Association="DB_42039_legacyModel.FK_users_schools_users" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

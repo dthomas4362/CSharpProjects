@@ -1,0 +1,10 @@
+C:\Users\conzi\Legacy\Legacy_DAL\bin\Debug\Legacy_DAL.dll.config
+C:\Users\conzi\Legacy\Legacy_DAL\bin\Debug\Legacy_DAL.dll
+C:\Users\conzi\Legacy\Legacy_DAL\bin\Debug\Legacy_DAL.pdb
+C:\Users\conzi\Legacy\Legacy_DAL\bin\Debug\EntityFramework.dll
+C:\Users\conzi\Legacy\Legacy_DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\conzi\Legacy\Legacy_DAL\bin\Debug\EntityFramework.xml
+C:\Users\conzi\Legacy\Legacy_DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\conzi\Legacy\Legacy_DAL\obj\Debug\Legacy_DAL.csprojResolveAssemblyReference.cache
+C:\Users\conzi\Legacy\Legacy_DAL\obj\Debug\Legacy_DAL.dll
+C:\Users\conzi\Legacy\Legacy_DAL\obj\Debug\Legacy_DAL.pdb

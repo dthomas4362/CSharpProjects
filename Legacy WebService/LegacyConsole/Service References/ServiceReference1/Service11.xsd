@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LegacyModel" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LegacyModel" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfDTO_religion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_religion" nillable="true" type="tns:DTO_religion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_religion" nillable="true" type="tns:ArrayOfDTO_religion" />
+  <xs:complexType name="DTO_religion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="religion1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_religion" nillable="true" type="tns:DTO_religion" />
+  <xs:complexType name="ArrayOfDTO_gender">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_gender" nillable="true" type="tns:DTO_gender" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_gender" nillable="true" type="tns:ArrayOfDTO_gender" />
+  <xs:complexType name="DTO_gender">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="gender1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_gender" nillable="true" type="tns:DTO_gender" />
+  <xs:complexType name="ArrayOfDTO_politic">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_politic" nillable="true" type="tns:DTO_politic" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_politic" nillable="true" type="tns:ArrayOfDTO_politic" />
+  <xs:complexType name="DTO_politic">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="politic1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_politic" nillable="true" type="tns:DTO_politic" />
+  <xs:complexType name="ArrayOfDTO_country">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_country" nillable="true" type="tns:DTO_country" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_country" nillable="true" type="tns:ArrayOfDTO_country" />
+  <xs:complexType name="DTO_country">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="country1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_country" nillable="true" type="tns:DTO_country" />
+  <xs:complexType name="ArrayOfDTO_user_types">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_user_types" nillable="true" type="tns:DTO_user_types" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_user_types" nillable="true" type="tns:ArrayOfDTO_user_types" />
+  <xs:complexType name="DTO_user_types">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="user_type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_user_types" nillable="true" type="tns:DTO_user_types" />
+  <xs:complexType name="ArrayOfDTO_messagetypes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_messagetypes" nillable="true" type="tns:DTO_messagetypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_messagetypes" nillable="true" type="tns:ArrayOfDTO_messagetypes" />
+  <xs:complexType name="DTO_messagetypes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="message_type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_messagetypes" nillable="true" type="tns:DTO_messagetypes" />
+  <xs:complexType name="ArrayOfDTO_hobby">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_hobby" nillable="true" type="tns:DTO_hobby" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_hobby" nillable="true" type="tns:ArrayOfDTO_hobby" />
+  <xs:complexType name="DTO_hobby">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="hobby1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_hobby" nillable="true" type="tns:DTO_hobby" />
+  <xs:complexType name="ArrayOfDTO_school">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_school" nillable="true" type="tns:DTO_school" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_school" nillable="true" type="tns:ArrayOfDTO_school" />
+  <xs:complexType name="DTO_school">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="school_address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="school_country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="school_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="school_year" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="school_zip" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_school" nillable="true" type="tns:DTO_school" />
+  <xs:complexType name="ArrayOfDTO_job">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_job" nillable="true" type="tns:DTO_job" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_job" nillable="true" type="tns:ArrayOfDTO_job" />
+  <xs:complexType name="DTO_job">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="company_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="position" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="year_ended" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="year_started" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_job" nillable="true" type="tns:DTO_job" />
+  <xs:complexType name="ArrayOfDTO_state">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_state" nillable="true" type="tns:DTO_state" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_state" nillable="true" type="tns:ArrayOfDTO_state" />
+  <xs:complexType name="DTO_state">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="countries_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="countryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_state" nillable="true" type="tns:DTO_state" />
+  <xs:complexType name="ArrayOfDTO_address">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_address" nillable="true" type="tns:DTO_address" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_address" nillable="true" type="tns:ArrayOfDTO_address" />
+  <xs:complexType name="DTO_address">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="address1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="postal_code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="stateName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="state_id" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_address" nillable="true" type="tns:DTO_address" />
+  <xs:complexType name="ArrayOfDTO_message">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_message" nillable="true" type="tns:DTO_message" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_message" nillable="true" type="tns:ArrayOfDTO_message" />
+  <xs:complexType name="DTO_message">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="authorName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="message1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="message_type_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="users_id" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_message" nillable="true" type="tns:DTO_message" />
+  <xs:complexType name="ArrayOfDTO_user_job">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_user_job" nillable="true" type="tns:DTO_user_job" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_user_job" nillable="true" type="tns:ArrayOfDTO_user_job" />
+  <xs:complexType name="DTO_user_job">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="jobName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jobs_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="users_id" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_user_job" nillable="true" type="tns:DTO_user_job" />
+  <xs:complexType name="ArrayOfDTO_user_address">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_user_address" nillable="true" type="tns:DTO_user_address" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_user_address" nillable="true" type="tns:ArrayOfDTO_user_address" />
+  <xs:complexType name="DTO_user_address">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="addressDetails" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="addresses_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="users_id" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_user_address" nillable="true" type="tns:DTO_user_address" />
+  <xs:complexType name="ArrayOfDTO_user_hobby">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_user_hobby" nillable="true" type="tns:DTO_user_hobby" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_user_hobby" nillable="true" type="tns:ArrayOfDTO_user_hobby" />
+  <xs:complexType name="DTO_user_hobby">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="hobbies_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="hobbyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="users_id" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_user_hobby" nillable="true" type="tns:DTO_user_hobby" />
+  <xs:complexType name="ArrayOfDTO_user_school">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_user_school" nillable="true" type="tns:DTO_user_school" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_user_school" nillable="true" type="tns:ArrayOfDTO_user_school" />
+  <xs:complexType name="DTO_user_school">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="schoolLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="schoolName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="schoolYear" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="schools_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="users_id" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_user_school" nillable="true" type="tns:DTO_user_school" />
+  <xs:complexType name="ArrayOfDTO_associate">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_associate" nillable="true" type="tns:DTO_associate" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_associate" nillable="true" type="tns:ArrayOfDTO_associate" />
+  <xs:complexType name="DTO_associate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="associate_user_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="user_id" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_associate" nillable="true" type="tns:DTO_associate" />
+  <xs:complexType name="ArrayOfDTO_admin_associates">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_admin_associates" nillable="true" type="tns:DTO_admin_associates" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_admin_associates" nillable="true" type="tns:ArrayOfDTO_admin_associates" />
+  <xs:complexType name="DTO_admin_associates">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="admin_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="associate_user_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_admin_associates" nillable="true" type="tns:DTO_admin_associates" />
+  <xs:complexType name="DTO_user">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="admin_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="associate_user_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="date_of_birth" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="email_address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="first_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="genderType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="image" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="last_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="middle_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="politicName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="religionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="suffix" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="user_types_id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_user" nillable="true" type="tns:DTO_user" />
+  <xs:complexType name="ArrayOfDTO_user">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_user" nillable="true" type="tns:DTO_user" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_user" nillable="true" type="tns:ArrayOfDTO_user" />
+  <xs:complexType name="DTO_login">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="email_address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_login" nillable="true" type="tns:DTO_login" />
+</xs:schema>

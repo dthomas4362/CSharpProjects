@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:64542/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:64542/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:64542/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/LegacyModel" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_getReligions_InputMessage">
+    <wsdl:part name="parameters" element="tns:getReligions" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getReligions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getReligionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getGenders_InputMessage">
+    <wsdl:part name="parameters" element="tns:getGenders" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getGenders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getGendersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getPolitics_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPolitics" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getPolitics_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPoliticsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getCountries_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCountries" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getCountries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCountriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserTypes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getMessageTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMessageTypes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getMessageTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMessageTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getHobbies_InputMessage">
+    <wsdl:part name="parameters" element="tns:getHobbies" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getHobbies_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getHobbiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getSchools_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSchools" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getSchools_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSchoolsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getJobs_InputMessage">
+    <wsdl:part name="parameters" element="tns:getJobs" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getJobs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getJobsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getStates_InputMessage">
+    <wsdl:part name="parameters" element="tns:getStates" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getStates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getStatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAddresses_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAddresses" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAddresses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAddressesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMessages" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserJobs_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserJobs" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserJobs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserJobsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserAddress" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserHobby_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserHobby" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserHobby_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserHobbyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserSchool_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserSchool" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserSchool_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserSchoolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAssociate_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAssociate" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAssociate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAssociateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAdminAssociate_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAdminAssociate" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAdminAssociate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAdminAssociateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_newLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:newLogin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_newLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:newLoginResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="getReligions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getReligions" message="tns:IService1_getReligions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getReligionsResponse" message="tns:IService1_getReligions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getGenders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getGenders" message="tns:IService1_getGenders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getGendersResponse" message="tns:IService1_getGenders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPolitics">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getPolitics" message="tns:IService1_getPolitics_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getPoliticsResponse" message="tns:IService1_getPolitics_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCountries">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getCountries" message="tns:IService1_getCountries_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getCountriesResponse" message="tns:IService1_getCountries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getUserTypes" message="tns:IService1_getUserTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getUserTypesResponse" message="tns:IService1_getUserTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMessageTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getMessageTypes" message="tns:IService1_getMessageTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getMessageTypesResponse" message="tns:IService1_getMessageTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getHobbies">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getHobbies" message="tns:IService1_getHobbies_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getHobbiesResponse" message="tns:IService1_getHobbies_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSchools">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getSchools" message="tns:IService1_getSchools_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getSchoolsResponse" message="tns:IService1_getSchools_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getJobs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getJobs" message="tns:IService1_getJobs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getJobsResponse" message="tns:IService1_getJobs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getStates">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getStates" message="tns:IService1_getStates_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getStatesResponse" message="tns:IService1_getStates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAddresses">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getAddresses" message="tns:IService1_getAddresses_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getAddressesResponse" message="tns:IService1_getAddresses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMessages">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getMessages" message="tns:IService1_getMessages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getMessagesResponse" message="tns:IService1_getMessages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserJobs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getUserJobs" message="tns:IService1_getUserJobs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getUserJobsResponse" message="tns:IService1_getUserJobs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getUserAddress" message="tns:IService1_getUserAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getUserAddressResponse" message="tns:IService1_getUserAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserHobby">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getUserHobby" message="tns:IService1_getUserHobby_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getUserHobbyResponse" message="tns:IService1_getUserHobby_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserSchool">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getUserSchool" message="tns:IService1_getUserSchool_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getUserSchoolResponse" message="tns:IService1_getUserSchool_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAssociate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getAssociate" message="tns:IService1_getAssociate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getAssociateResponse" message="tns:IService1_getAssociate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAdminAssociate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getAdminAssociate" message="tns:IService1_getAdminAssociate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getAdminAssociateResponse" message="tns:IService1_getAdminAssociate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getUser" message="tns:IService1_getUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getUserResponse" message="tns:IService1_getUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="newLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/newLogin" message="tns:IService1_newLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/newLoginResponse" message="tns:IService1_newLogin_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="Service1" />
+</wsdl:definitions>

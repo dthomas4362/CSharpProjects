@@ -1,0 +1,5 @@
+C:\Users\conzi\Legacy\LegacyModel\bin\Debug\LegacyModel.dll
+C:\Users\conzi\Legacy\LegacyModel\bin\Debug\LegacyModel.pdb
+C:\Users\conzi\Legacy\LegacyModel\obj\Debug\LegacyModel.csprojResolveAssemblyReference.cache
+C:\Users\conzi\Legacy\LegacyModel\obj\Debug\LegacyModel.dll
+C:\Users\conzi\Legacy\LegacyModel\obj\Debug\LegacyModel.pdb

@@ -1,0 +1,8 @@
+C:\Users\conzi\Legacy\LegacyConsole\bin\Debug\LegacyConsole.exe.config
+C:\Users\conzi\Legacy\LegacyConsole\bin\Debug\LegacyConsole.exe
+C:\Users\conzi\Legacy\LegacyConsole\bin\Debug\LegacyConsole.pdb
+C:\Users\conzi\Legacy\LegacyConsole\bin\Debug\LegacyModel.dll
+C:\Users\conzi\Legacy\LegacyConsole\bin\Debug\LegacyModel.pdb
+C:\Users\conzi\Legacy\LegacyConsole\obj\Debug\LegacyConsole.csprojResolveAssemblyReference.cache
+C:\Users\conzi\Legacy\LegacyConsole\obj\Debug\LegacyConsole.exe
+C:\Users\conzi\Legacy\LegacyConsole\obj\Debug\LegacyConsole.pdb

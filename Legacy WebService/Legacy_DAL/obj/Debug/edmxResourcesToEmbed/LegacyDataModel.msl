@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_42039_legacyModelStoreContainer" CdmEntityContainer="DB_42039_legacyEntities">
+    <EntitySetMapping Name="politics">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.politic">
+        <MappingFragment StoreEntitySet="politics">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="politic1" ColumnName="politic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="religions">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.religion">
+        <MappingFragment StoreEntitySet="religions">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="religion1" ColumnName="religion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="addresses">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.address">
+        <MappingFragment StoreEntitySet="addresses">
+          <ScalarProperty Name="state_id" ColumnName="state_id" />
+          <ScalarProperty Name="postal_code" ColumnName="postal_code" />
+          <ScalarProperty Name="address1" ColumnName="address" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="admin_associates">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.admin_associates">
+        <MappingFragment StoreEntitySet="admin_associates">
+          <ScalarProperty Name="associate_user_id" ColumnName="associate_user_id" />
+          <ScalarProperty Name="admin_id" ColumnName="admin_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="associates">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.associate">
+        <MappingFragment StoreEntitySet="associates">
+          <ScalarProperty Name="associate_user_id" ColumnName="associate_user_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="countries">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.country">
+        <MappingFragment StoreEntitySet="countries">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="genders">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.gender">
+        <MappingFragment StoreEntitySet="genders">
+          <ScalarProperty Name="gender1" ColumnName="gender" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hobbies">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.hobby">
+        <MappingFragment StoreEntitySet="hobbies">
+          <ScalarProperty Name="hobby1" ColumnName="hobby" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jobs">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.job">
+        <MappingFragment StoreEntitySet="jobs">
+          <ScalarProperty Name="year_ended" ColumnName="year_ended" />
+          <ScalarProperty Name="year_started" ColumnName="year_started" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="messages">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.message">
+        <MappingFragment StoreEntitySet="messages">
+          <ScalarProperty Name="message1" ColumnName="message" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="users_id" ColumnName="users_id" />
+          <ScalarProperty Name="message_type_id" ColumnName="message_type_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="messagetypes">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.messagetype">
+        <MappingFragment StoreEntitySet="messagetypes">
+          <ScalarProperty Name="message_type" ColumnName="message_type" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="schools">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.school">
+        <MappingFragment StoreEntitySet="schools">
+          <ScalarProperty Name="school_year" ColumnName="school_year" />
+          <ScalarProperty Name="school_country" ColumnName="school_country" />
+          <ScalarProperty Name="school_zip" ColumnName="school_zip" />
+          <ScalarProperty Name="school_address" ColumnName="school_address" />
+          <ScalarProperty Name="school_name" ColumnName="school_name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="states">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.state">
+        <MappingFragment StoreEntitySet="states">
+          <ScalarProperty Name="countries_id" ColumnName="countries_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_addresses">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.user_addresses">
+        <MappingFragment StoreEntitySet="user_addresses">
+          <ScalarProperty Name="addresses_id" ColumnName="addresses_id" />
+          <ScalarProperty Name="users_id" ColumnName="users_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_types">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.user_types">
+        <MappingFragment StoreEntitySet="user_types">
+          <ScalarProperty Name="user_type" ColumnName="user_type" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="genders_id" ColumnName="genders_id" />
+          <ScalarProperty Name="user_types_id" ColumnName="user_types_id" />
+          <ScalarProperty Name="religions_id" ColumnName="religions_id" />
+          <ScalarProperty Name="politics_id" ColumnName="politics_id" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="date_of_birth" ColumnName="date_of_birth" />
+          <ScalarProperty Name="suffix" ColumnName="suffix" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="middle_name" ColumnName="middle_name" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="email_address" ColumnName="email_address" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users_hobbies">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.users_hobbies">
+        <MappingFragment StoreEntitySet="users_hobbies">
+          <ScalarProperty Name="hobbies_id" ColumnName="hobbies_id" />
+          <ScalarProperty Name="users_id" ColumnName="users_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users_jobs">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.users_jobs">
+        <MappingFragment StoreEntitySet="users_jobs">
+          <ScalarProperty Name="jobs_id" ColumnName="jobs_id" />
+          <ScalarProperty Name="users_id" ColumnName="users_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users_schools">
+      <EntityTypeMapping TypeName="DB_42039_legacyModel.users_schools">
+        <MappingFragment StoreEntitySet="users_schools">
+          <ScalarProperty Name="schools_id" ColumnName="schools_id" />
+          <ScalarProperty Name="users_id" ColumnName="users_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

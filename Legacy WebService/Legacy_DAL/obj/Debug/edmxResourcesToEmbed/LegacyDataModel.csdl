@@ -1,0 +1,559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_42039_legacyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="politic">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="politic1" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="users" Relationship="DB_42039_legacyModel.FK_users_politics" FromRole="politic" ToRole="user" />
+  </EntityType>
+  <EntityType Name="religion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="religion1" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="users" Relationship="DB_42039_legacyModel.FK_users_religions" FromRole="religion" ToRole="user" />
+  </EntityType>
+  <EntityContainer Name="DB_42039_legacyEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="politics" EntityType="Self.politic" />
+    <EntitySet Name="religions" EntityType="Self.religion" />
+    <EntitySet Name="addresses" EntityType="DB_42039_legacyModel.address" />
+    <EntitySet Name="admin_associates" EntityType="DB_42039_legacyModel.admin_associates" />
+    <EntitySet Name="associates" EntityType="DB_42039_legacyModel.associate" />
+    <EntitySet Name="countries" EntityType="DB_42039_legacyModel.country" />
+    <EntitySet Name="genders" EntityType="DB_42039_legacyModel.gender" />
+    <EntitySet Name="hobbies" EntityType="DB_42039_legacyModel.hobby" />
+    <EntitySet Name="jobs" EntityType="DB_42039_legacyModel.job" />
+    <EntitySet Name="messages" EntityType="DB_42039_legacyModel.message" />
+    <EntitySet Name="messagetypes" EntityType="DB_42039_legacyModel.messagetype" />
+    <EntitySet Name="schools" EntityType="DB_42039_legacyModel.school" />
+    <EntitySet Name="states" EntityType="DB_42039_legacyModel.state" />
+    <EntitySet Name="user_addresses" EntityType="DB_42039_legacyModel.user_addresses" />
+    <EntitySet Name="user_types" EntityType="DB_42039_legacyModel.user_types" />
+    <EntitySet Name="users" EntityType="DB_42039_legacyModel.user" />
+    <EntitySet Name="users_hobbies" EntityType="DB_42039_legacyModel.users_hobbies" />
+    <EntitySet Name="users_jobs" EntityType="DB_42039_legacyModel.users_jobs" />
+    <EntitySet Name="users_schools" EntityType="DB_42039_legacyModel.users_schools" />
+    <AssociationSet Name="FK_addresses_states" Association="DB_42039_legacyModel.FK_addresses_states">
+      <End Role="state" EntitySet="states" />
+      <End Role="address" EntitySet="addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_user_addresses_addresses" Association="DB_42039_legacyModel.FK_user_addresses_addresses">
+      <End Role="address" EntitySet="addresses" />
+      <End Role="user_addresses" EntitySet="user_addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_admin_associates_users" Association="DB_42039_legacyModel.FK_admin_associates_users">
+      <End Role="user" EntitySet="users" />
+      <End Role="admin_associates" EntitySet="admin_associates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_admin_associates_users1" Association="DB_42039_legacyModel.FK_admin_associates_users1">
+      <End Role="user" EntitySet="users" />
+      <End Role="admin_associates" EntitySet="admin_associates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_associates_users" Association="DB_42039_legacyModel.FK_associates_users">
+      <End Role="user" EntitySet="users" />
+      <End Role="associate" EntitySet="associates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_associates_users1" Association="DB_42039_legacyModel.FK_associates_users1">
+      <End Role="user" EntitySet="users" />
+      <End Role="associate" EntitySet="associates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_states_countries" Association="DB_42039_legacyModel.FK_states_countries">
+      <End Role="country" EntitySet="countries" />
+      <End Role="state" EntitySet="states" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_genders" Association="DB_42039_legacyModel.FK_users_genders">
+      <End Role="gender" EntitySet="genders" />
+      <End Role="user" EntitySet="users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_hobbies_hobbies" Association="DB_42039_legacyModel.FK_users_hobbies_hobbies">
+      <End Role="hobby" EntitySet="hobbies" />
+      <End Role="users_hobbies" EntitySet="users_hobbies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_jobs_jobs" Association="DB_42039_legacyModel.FK_users_jobs_jobs">
+      <End Role="job" EntitySet="jobs" />
+      <End Role="users_jobs" EntitySet="users_jobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_messages_messagetypes" Association="DB_42039_legacyModel.FK_messages_messagetypes">
+      <End Role="messagetype" EntitySet="messagetypes" />
+      <End Role="message" EntitySet="messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_messages_users" Association="DB_42039_legacyModel.FK_messages_users">
+      <End Role="user" EntitySet="users" />
+      <End Role="message" EntitySet="messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_politics" Association="DB_42039_legacyModel.FK_users_politics">
+      <End Role="politic" EntitySet="politics" />
+      <End Role="user" EntitySet="users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_religions" Association="DB_42039_legacyModel.FK_users_religions">
+      <End Role="religion" EntitySet="religions" />
+      <End Role="user" EntitySet="users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_schools_schools" Association="DB_42039_legacyModel.FK_users_schools_schools">
+      <End Role="school" EntitySet="schools" />
+      <End Role="users_schools" EntitySet="users_schools" />
+    </AssociationSet>
+    <AssociationSet Name="FK_user_addresses_users" Association="DB_42039_legacyModel.FK_user_addresses_users">
+      <End Role="user" EntitySet="users" />
+      <End Role="user_addresses" EntitySet="user_addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_user_types" Association="DB_42039_legacyModel.FK_users_user_types">
+      <End Role="user_types" EntitySet="user_types" />
+      <End Role="user" EntitySet="users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_hobbies_users" Association="DB_42039_legacyModel.FK_users_hobbies_users">
+      <End Role="user" EntitySet="users" />
+      <End Role="users_hobbies" EntitySet="users_hobbies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_jobs_users" Association="DB_42039_legacyModel.FK_users_jobs_users">
+      <End Role="user" EntitySet="users" />
+      <End Role="users_jobs" EntitySet="users_jobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_schools_users" Association="DB_42039_legacyModel.FK_users_schools_users">
+      <End Role="user" EntitySet="users" />
+      <End Role="users_schools" EntitySet="users_schools" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="address">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="address1" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="postal_code" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="state_id" Type="Int32" />
+    <NavigationProperty Name="state" Relationship="DB_42039_legacyModel.FK_addresses_states" FromRole="address" ToRole="state" />
+    <NavigationProperty Name="user_addresses" Relationship="DB_42039_legacyModel.FK_user_addresses_addresses" FromRole="address" ToRole="user_addresses" />
+  </EntityType>
+  <EntityType Name="admin_associates">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="admin_id" Type="Int32" />
+    <Property Name="associate_user_id" Type="Int32" />
+    <NavigationProperty Name="user" Relationship="DB_42039_legacyModel.FK_admin_associates_users" FromRole="admin_associates" ToRole="user" />
+    <NavigationProperty Name="user1" Relationship="DB_42039_legacyModel.FK_admin_associates_users1" FromRole="admin_associates" ToRole="user" />
+  </EntityType>
+  <EntityType Name="associate">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="associate_user_id" Type="Int32" />
+    <NavigationProperty Name="user" Relationship="DB_42039_legacyModel.FK_associates_users" FromRole="associate" ToRole="user" />
+    <NavigationProperty Name="user1" Relationship="DB_42039_legacyModel.FK_associates_users1" FromRole="associate" ToRole="user" />
+  </EntityType>
+  <EntityType Name="country">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="states" Relationship="DB_42039_legacyModel.FK_states_countries" FromRole="country" ToRole="state" />
+  </EntityType>
+  <EntityType Name="gender">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="gender1" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="users" Relationship="DB_42039_legacyModel.FK_users_genders" FromRole="gender" ToRole="user" />
+  </EntityType>
+  <EntityType Name="hobby">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="hobby1" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="users_hobbies" Relationship="DB_42039_legacyModel.FK_users_hobbies_hobbies" FromRole="hobby" ToRole="users_hobbies" />
+  </EntityType>
+  <EntityType Name="job">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="position" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="company_name" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="year_started" Type="DateTime" Precision="0" />
+    <Property Name="year_ended" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="users_jobs" Relationship="DB_42039_legacyModel.FK_users_jobs_jobs" FromRole="job" ToRole="users_jobs" />
+  </EntityType>
+  <EntityType Name="message">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="message_type_id" Type="Int32" />
+    <Property Name="users_id" Type="Int32" />
+    <Property Name="title" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="message1" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="messagetype" Relationship="DB_42039_legacyModel.FK_messages_messagetypes" FromRole="message" ToRole="messagetype" />
+    <NavigationProperty Name="user" Relationship="DB_42039_legacyModel.FK_messages_users" FromRole="message" ToRole="user" />
+  </EntityType>
+  <EntityType Name="messagetype">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="message_type" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="messages" Relationship="DB_42039_legacyModel.FK_messages_messagetypes" FromRole="messagetype" ToRole="message" />
+  </EntityType>
+  <EntityType Name="school">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="school_name" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="school_address" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="school_zip" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="school_country" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="school_year" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="users_schools" Relationship="DB_42039_legacyModel.FK_users_schools_schools" FromRole="school" ToRole="users_schools" />
+  </EntityType>
+  <EntityType Name="state">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="countries_id" Type="Int32" />
+    <NavigationProperty Name="addresses" Relationship="DB_42039_legacyModel.FK_addresses_states" FromRole="state" ToRole="address" />
+    <NavigationProperty Name="country" Relationship="DB_42039_legacyModel.FK_states_countries" FromRole="state" ToRole="country" />
+  </EntityType>
+  <EntityType Name="user_addresses">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="users_id" Type="Int32" />
+    <Property Name="addresses_id" Type="Int32" />
+    <NavigationProperty Name="address" Relationship="DB_42039_legacyModel.FK_user_addresses_addresses" FromRole="user_addresses" ToRole="address" />
+    <NavigationProperty Name="user" Relationship="DB_42039_legacyModel.FK_user_addresses_users" FromRole="user_addresses" ToRole="user" />
+  </EntityType>
+  <EntityType Name="user_types">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_type" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="users" Relationship="DB_42039_legacyModel.FK_users_user_types" FromRole="user_types" ToRole="user" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="email_address" Type="String" MaxLength="320" FixedLength="false" Unicode="false" />
+    <Property Name="title" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="first_name" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="middle_name" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="last_name" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="suffix" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="date_of_birth" Type="DateTime" Precision="0" />
+    <Property Name="password" Type="String" MaxLength="128" FixedLength="true" Unicode="false" />
+    <Property Name="politics_id" Type="Int32" Nullable="false" />
+    <Property Name="religions_id" Type="Int32" Nullable="false" />
+    <Property Name="user_types_id" Type="Int32" Nullable="false" />
+    <Property Name="genders_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="admin_associates" Relationship="DB_42039_legacyModel.FK_admin_associates_users" FromRole="user" ToRole="admin_associates" />
+    <NavigationProperty Name="admin_associates1" Relationship="DB_42039_legacyModel.FK_admin_associates_users1" FromRole="user" ToRole="admin_associates" />
+    <NavigationProperty Name="associates" Relationship="DB_42039_legacyModel.FK_associates_users" FromRole="user" ToRole="associate" />
+    <NavigationProperty Name="associates1" Relationship="DB_42039_legacyModel.FK_associates_users1" FromRole="user" ToRole="associate" />
+    <NavigationProperty Name="gender" Relationship="DB_42039_legacyModel.FK_users_genders" FromRole="user" ToRole="gender" />
+    <NavigationProperty Name="messages" Relationship="DB_42039_legacyModel.FK_messages_users" FromRole="user" ToRole="message" />
+    <NavigationProperty Name="politic" Relationship="DB_42039_legacyModel.FK_users_politics" FromRole="user" ToRole="politic" />
+    <NavigationProperty Name="religion" Relationship="DB_42039_legacyModel.FK_users_religions" FromRole="user" ToRole="religion" />
+    <NavigationProperty Name="user_addresses" Relationship="DB_42039_legacyModel.FK_user_addresses_users" FromRole="user" ToRole="user_addresses" />
+    <NavigationProperty Name="user_types" Relationship="DB_42039_legacyModel.FK_users_user_types" FromRole="user" ToRole="user_types" />
+    <NavigationProperty Name="users_hobbies" Relationship="DB_42039_legacyModel.FK_users_hobbies_users" FromRole="user" ToRole="users_hobbies" />
+    <NavigationProperty Name="users_jobs" Relationship="DB_42039_legacyModel.FK_users_jobs_users" FromRole="user" ToRole="users_jobs" />
+    <NavigationProperty Name="users_schools" Relationship="DB_42039_legacyModel.FK_users_schools_users" FromRole="user" ToRole="users_schools" />
+  </EntityType>
+  <EntityType Name="users_hobbies">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="users_id" Type="Int32" />
+    <Property Name="hobbies_id" Type="Int32" />
+    <NavigationProperty Name="hobby" Relationship="DB_42039_legacyModel.FK_users_hobbies_hobbies" FromRole="users_hobbies" ToRole="hobby" />
+    <NavigationProperty Name="user" Relationship="DB_42039_legacyModel.FK_users_hobbies_users" FromRole="users_hobbies" ToRole="user" />
+  </EntityType>
+  <EntityType Name="users_jobs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="users_id" Type="Int32" />
+    <Property Name="jobs_id" Type="Int32" />
+    <NavigationProperty Name="job" Relationship="DB_42039_legacyModel.FK_users_jobs_jobs" FromRole="users_jobs" ToRole="job" />
+    <NavigationProperty Name="user" Relationship="DB_42039_legacyModel.FK_users_jobs_users" FromRole="users_jobs" ToRole="user" />
+  </EntityType>
+  <EntityType Name="users_schools">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="users_id" Type="Int32" />
+    <Property Name="schools_id" Type="Int32" />
+    <NavigationProperty Name="school" Relationship="DB_42039_legacyModel.FK_users_schools_schools" FromRole="users_schools" ToRole="school" />
+    <NavigationProperty Name="user" Relationship="DB_42039_legacyModel.FK_users_schools_users" FromRole="users_schools" ToRole="user" />
+  </EntityType>
+  <Association Name="FK_addresses_states">
+    <End Type="DB_42039_legacyModel.state" Role="state" Multiplicity="0..1" />
+    <End Type="DB_42039_legacyModel.address" Role="address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="state">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="address">
+        <PropertyRef Name="state_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_user_addresses_addresses">
+    <End Type="DB_42039_legacyModel.address" Role="address" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="DB_42039_legacyModel.user_addresses" Role="user_addresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="address">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user_addresses">
+        <PropertyRef Name="addresses_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_admin_associates_users">
+    <End Type="DB_42039_legacyModel.user" Role="user" Multiplicity="0..1" />
+    <End Type="DB_42039_legacyModel.admin_associates" Role="admin_associates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="admin_associates">
+        <PropertyRef Name="admin_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_admin_associates_users1">
+    <End Type="DB_42039_legacyModel.user" Role="user" Multiplicity="0..1" />
+    <End Type="DB_42039_legacyModel.admin_associates" Role="admin_associates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="admin_associates">
+        <PropertyRef Name="associate_user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_associates_users">
+    <End Type="DB_42039_legacyModel.user" Role="user" Multiplicity="0..1" />
+    <End Type="DB_42039_legacyModel.associate" Role="associate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="associate">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_associates_users1">
+    <End Type="DB_42039_legacyModel.user" Role="user" Multiplicity="0..1" />
+    <End Type="DB_42039_legacyModel.associate" Role="associate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="associate">
+        <PropertyRef Name="associate_user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_states_countries">
+    <End Type="DB_42039_legacyModel.country" Role="country" Multiplicity="0..1" />
+    <End Type="DB_42039_legacyModel.state" Role="state" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="country">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="state">
+        <PropertyRef Name="countries_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_genders">
+    <End Type="DB_42039_legacyModel.gender" Role="gender" Multiplicity="1" />
+    <End Type="DB_42039_legacyModel.user" Role="user" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="gender">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user">
+        <PropertyRef Name="genders_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_hobbies_hobbies">
+    <End Type="DB_42039_legacyModel.hobby" Role="hobby" Multiplicity="0..1" />
+    <End Type="DB_42039_legacyModel.users_hobbies" Role="users_hobbies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hobby">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users_hobbies">
+        <PropertyRef Name="hobbies_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_jobs_jobs">
+    <End Type="DB_42039_legacyModel.job" Role="job" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="DB_42039_legacyModel.users_jobs" Role="users_jobs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="job">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users_jobs">
+        <PropertyRef Name="jobs_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_messages_messagetypes">
+    <End Type="DB_42039_legacyModel.messagetype" Role="messagetype" Multiplicity="0..1" />
+    <End Type="DB_42039_legacyModel.message" Role="message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="messagetype">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="message">
+        <PropertyRef Name="message_type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_messages_users">
+    <End Type="DB_42039_legacyModel.user" Role="user" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="DB_42039_legacyModel.message" Role="message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="message">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_politics">
+    <End Type="DB_42039_legacyModel.politic" Role="politic" Multiplicity="1" />
+    <End Type="DB_42039_legacyModel.user" Role="user" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="politic">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user">
+        <PropertyRef Name="politics_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_religions">
+    <End Type="DB_42039_legacyModel.religion" Role="religion" Multiplicity="1" />
+    <End Type="DB_42039_legacyModel.user" Role="user" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="religion">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user">
+        <PropertyRef Name="religions_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_schools_schools">
+    <End Type="DB_42039_legacyModel.school" Role="school" Multiplicity="0..1" />
+    <End Type="DB_42039_legacyModel.users_schools" Role="users_schools" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="school">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users_schools">
+        <PropertyRef Name="schools_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_user_addresses_users">
+    <End Type="DB_42039_legacyModel.user" Role="user" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="DB_42039_legacyModel.user_addresses" Role="user_addresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user_addresses">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_user_types">
+    <End Type="DB_42039_legacyModel.user_types" Role="user_types" Multiplicity="1" />
+    <End Type="DB_42039_legacyModel.user" Role="user" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user_types">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user">
+        <PropertyRef Name="user_types_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_hobbies_users">
+    <End Type="DB_42039_legacyModel.user" Role="user" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="DB_42039_legacyModel.users_hobbies" Role="users_hobbies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users_hobbies">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_jobs_users">
+    <End Type="DB_42039_legacyModel.user" Role="user" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="DB_42039_legacyModel.users_jobs" Role="users_jobs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users_jobs">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_schools_users">
+    <End Type="DB_42039_legacyModel.user" Role="user" Multiplicity="0..1" />
+    <End Type="DB_42039_legacyModel.users_schools" Role="users_schools" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users_schools">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

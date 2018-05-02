@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyConsole", "LegacyConsole\LegacyConsole.csproj", "{1FD15744-3F13-4207-8D94-5E5AC27585D2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B1D26A2F-263F-4C31-8498-50977973893F} = {B1D26A2F-263F-4C31-8498-50977973893F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyService", "LegacyService\LegacyService.csproj", "{B1D26A2F-263F-4C31-8498-50977973893F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyModel", "LegacyModel\LegacyModel.csproj", "{049BA841-2714-4493-9795-5E0D7809F219}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Legacy_DAL", "Legacy_DAL\Legacy_DAL.csproj", "{A02159EC-0455-4E0D-864D-2AAC2213107C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{293848A4-2B26-4EFD-AE39-88E8EB93F08D}"
+	ProjectSection(SolutionItems) = preProject
+		ProgrammingNotes.txt = ProgrammingNotes.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FD15744-3F13-4207-8D94-5E5AC27585D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FD15744-3F13-4207-8D94-5E5AC27585D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FD15744-3F13-4207-8D94-5E5AC27585D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FD15744-3F13-4207-8D94-5E5AC27585D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1D26A2F-263F-4C31-8498-50977973893F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D26A2F-263F-4C31-8498-50977973893F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D26A2F-263F-4C31-8498-50977973893F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D26A2F-263F-4C31-8498-50977973893F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{049BA841-2714-4493-9795-5E0D7809F219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049BA841-2714-4493-9795-5E0D7809F219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049BA841-2714-4493-9795-5E0D7809F219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{049BA841-2714-4493-9795-5E0D7809F219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A02159EC-0455-4E0D-864D-2AAC2213107C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A02159EC-0455-4E0D-864D-2AAC2213107C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A02159EC-0455-4E0D-864D-2AAC2213107C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A02159EC-0455-4E0D-864D-2AAC2213107C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2E91D6D-ACA7-4681-A013-2C17A2AACAF9}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://gtcadvsys.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Legacy_DAL\\Legacy_DAL.csproj
+		SccProjectName1 = Legacy_DAL
+		SccLocalPath1 = Legacy_DAL
+		SccProjectUniqueName2 = LegacyConsole\\LegacyConsole.csproj
+		SccProjectName2 = LegacyConsole
+		SccLocalPath2 = LegacyConsole
+		SccProjectUniqueName3 = LegacyModel\\LegacyModel.csproj
+		SccProjectName3 = LegacyModel
+		SccLocalPath3 = LegacyModel
+		SccProjectUniqueName4 = LegacyService\\LegacyService.csproj
+		SccProjectName4 = LegacyService
+		SccLocalPath4 = LegacyService
+	EndGlobalSection
+EndGlobal

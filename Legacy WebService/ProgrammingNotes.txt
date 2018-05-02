@@ -1,0 +1,15 @@
+1 copy function from service1.svc.cs(source code)
+2 iservice1.cs copy get
+3 go back to source code
+  legacy model (go to definition) and copy
+4 Legacy_DAL look for .edmx
+5. update legacyservice by bulding it
+6. update service references here right click serviceRefernce1
+7. test in LegacyConsole Program.cs
+
+to publish
+1. right click on legacy service
+2. click publish
+3. publish again
+
+   

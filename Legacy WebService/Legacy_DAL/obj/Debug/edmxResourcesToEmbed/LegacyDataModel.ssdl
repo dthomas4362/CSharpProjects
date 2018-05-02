@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_42039_legacyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="addresses">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="address" Type="varchar" MaxLength="45" />
+    <Property Name="postal_code" Type="char" MaxLength="5" />
+    <Property Name="state_id" Type="int" />
+  </EntityType>
+  <EntityType Name="admin_associates">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="admin_id" Type="int" />
+    <Property Name="associate_user_id" Type="int" />
+  </EntityType>
+  <EntityType Name="associates">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="associate_user_id" Type="int" />
+  </EntityType>
+  <EntityType Name="countries">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="genders">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="gender" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="hobbies">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="hobby" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="jobs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="position" Type="varchar" MaxLength="45" />
+    <Property Name="company_name" Type="varchar" MaxLength="45" />
+    <Property Name="year_started" Type="date" />
+    <Property Name="year_ended" Type="date" />
+  </EntityType>
+  <EntityType Name="messages">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="message_type_id" Type="int" />
+    <Property Name="users_id" Type="int" />
+    <Property Name="title" Type="varchar" MaxLength="255" />
+    <Property Name="message" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="messagetypes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="message_type" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="politics">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="politic" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="religions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="religion" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="schools">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="school_name" Type="varchar" MaxLength="45" />
+    <Property Name="school_address" Type="varchar" MaxLength="45" />
+    <Property Name="school_zip" Type="char" MaxLength="5" />
+    <Property Name="school_country" Type="varchar" MaxLength="45" />
+    <Property Name="school_year" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="states">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="45" />
+    <Property Name="countries_id" Type="int" />
+  </EntityType>
+  <EntityType Name="user_addresses">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="users_id" Type="int" />
+    <Property Name="addresses_id" Type="int" />
+  </EntityType>
+  <EntityType Name="user_types">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_type" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="email_address" Type="varchar" MaxLength="320" />
+    <Property Name="title" Type="varchar" MaxLength="45" />
+    <Property Name="first_name" Type="varchar" MaxLength="45" />
+    <Property Name="middle_name" Type="varchar" MaxLength="45" />
+    <Property Name="last_name" Type="varchar" MaxLength="45" />
+    <Property Name="suffix" Type="varchar" MaxLength="45" />
+    <Property Name="date_of_birth" Type="date" />
+    <Property Name="password" Type="char" MaxLength="128" />
+    <Property Name="politics_id" Type="int" Nullable="false" />
+    <Property Name="religions_id" Type="int" Nullable="false" />
+    <Property Name="user_types_id" Type="int" Nullable="false" />
+    <Property Name="genders_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="users_hobbies">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="users_id" Type="int" />
+    <Property Name="hobbies_id" Type="int" />
+  </EntityType>
+  <EntityType Name="users_jobs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="users_id" Type="int" />
+    <Property Name="jobs_id" Type="int" />
+  </EntityType>
+  <EntityType Name="users_schools">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="users_id" Type="int" />
+    <Property Name="schools_id" Type="int" />
+  </EntityType>
+  <Association Name="FK_addresses_states">
+    <End Role="states" Type="Self.states" Multiplicity="0..1" />
+    <End Role="addresses" Type="Self.addresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="states">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="addresses">
+        <PropertyRef Name="state_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_admin_associates_users">
+    <End Role="users" Type="Self.users" Multiplicity="0..1" />
+    <End Role="admin_associates" Type="Self.admin_associates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="admin_associates">
+        <PropertyRef Name="admin_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_admin_associates_users1">
+    <End Role="users" Type="Self.users" Multiplicity="0..1" />
+    <End Role="admin_associates" Type="Self.admin_associates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="admin_associates">
+        <PropertyRef Name="associate_user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_associates_users">
+    <End Role="users" Type="Self.users" Multiplicity="0..1" />
+    <End Role="associates" Type="Self.associates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="associates">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_associates_users1">
+    <End Role="users" Type="Self.users" Multiplicity="0..1" />
+    <End Role="associates" Type="Self.associates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="associates">
+        <PropertyRef Name="associate_user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_messages_messagetypes">
+    <End Role="messagetypes" Type="Self.messagetypes" Multiplicity="0..1" />
+    <End Role="messages" Type="Self.messages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="messagetypes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="messages">
+        <PropertyRef Name="message_type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_messages_users">
+    <End Role="users" Type="Self.users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="messages" Type="Self.messages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="messages">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_states_countries">
+    <End Role="countries" Type="Self.countries" Multiplicity="0..1" />
+    <End Role="states" Type="Self.states" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="countries">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="states">
+        <PropertyRef Name="countries_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_user_addresses_addresses">
+    <End Role="addresses" Type="Self.addresses" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="user_addresses" Type="Self.user_addresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="addresses">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user_addresses">
+        <PropertyRef Name="addresses_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_user_addresses_users">
+    <End Role="users" Type="Self.users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="user_addresses" Type="Self.user_addresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user_addresses">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_genders">
+    <End Role="genders" Type="Self.genders" Multiplicity="1" />
+    <End Role="users" Type="Self.users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="genders">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users">
+        <PropertyRef Name="genders_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_hobbies_hobbies">
+    <End Role="hobbies" Type="Self.hobbies" Multiplicity="0..1" />
+    <End Role="users_hobbies" Type="Self.users_hobbies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hobbies">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users_hobbies">
+        <PropertyRef Name="hobbies_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_hobbies_users">
+    <End Role="users" Type="Self.users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="users_hobbies" Type="Self.users_hobbies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users_hobbies">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_jobs_jobs">
+    <End Role="jobs" Type="Self.jobs" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="users_jobs" Type="Self.users_jobs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="jobs">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users_jobs">
+        <PropertyRef Name="jobs_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_jobs_users">
+    <End Role="users" Type="Self.users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="users_jobs" Type="Self.users_jobs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users_jobs">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_politics">
+    <End Role="politics" Type="Self.politics" Multiplicity="1" />
+    <End Role="users" Type="Self.users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="politics">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users">
+        <PropertyRef Name="politics_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_religions">
+    <End Role="religions" Type="Self.religions" Multiplicity="1" />
+    <End Role="users" Type="Self.users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="religions">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users">
+        <PropertyRef Name="religions_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_schools_schools">
+    <End Role="schools" Type="Self.schools" Multiplicity="0..1" />
+    <End Role="users_schools" Type="Self.users_schools" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="schools">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users_schools">
+        <PropertyRef Name="schools_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_schools_users">
+    <End Role="users" Type="Self.users" Multiplicity="0..1" />
+    <End Role="users_schools" Type="Self.users_schools" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users_schools">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_users_user_types">
+    <End Role="user_types" Type="Self.user_types" Multiplicity="1" />
+    <End Role="users" Type="Self.users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user_types">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="users">
+        <PropertyRef Name="user_types_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_42039_legacyModelStoreContainer">
+    <EntitySet Name="addresses" EntityType="Self.addresses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="admin_associates" EntityType="Self.admin_associates" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="associates" EntityType="Self.associates" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="countries" EntityType="Self.countries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="genders" EntityType="Self.genders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="hobbies" EntityType="Self.hobbies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="jobs" EntityType="Self.jobs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="messages" EntityType="Self.messages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="messagetypes" EntityType="Self.messagetypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="politics" EntityType="Self.politics" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="religions" EntityType="Self.religions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="schools" EntityType="Self.schools" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="states" EntityType="Self.states" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user_addresses" EntityType="Self.user_addresses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user_types" EntityType="Self.user_types" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users_hobbies" EntityType="Self.users_hobbies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users_jobs" EntityType="Self.users_jobs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users_schools" EntityType="Self.users_schools" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_addresses_states" Association="Self.FK_addresses_states">
+      <End Role="states" EntitySet="states" />
+      <End Role="addresses" EntitySet="addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_admin_associates_users" Association="Self.FK_admin_associates_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="admin_associates" EntitySet="admin_associates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_admin_associates_users1" Association="Self.FK_admin_associates_users1">
+      <End Role="users" EntitySet="users" />
+      <End Role="admin_associates" EntitySet="admin_associates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_associates_users" Association="Self.FK_associates_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="associates" EntitySet="associates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_associates_users1" Association="Self.FK_associates_users1">
+      <End Role="users" EntitySet="users" />
+      <End Role="associates" EntitySet="associates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_messages_messagetypes" Association="Self.FK_messages_messagetypes">
+      <End Role="messagetypes" EntitySet="messagetypes" />
+      <End Role="messages" EntitySet="messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_messages_users" Association="Self.FK_messages_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="messages" EntitySet="messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_states_countries" Association="Self.FK_states_countries">
+      <End Role="countries" EntitySet="countries" />
+      <End Role="states" EntitySet="states" />
+    </AssociationSet>
+    <AssociationSet Name="FK_user_addresses_addresses" Association="Self.FK_user_addresses_addresses">
+      <End Role="addresses" EntitySet="addresses" />
+      <End Role="user_addresses" EntitySet="user_addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_user_addresses_users" Association="Self.FK_user_addresses_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="user_addresses" EntitySet="user_addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_genders" Association="Self.FK_users_genders">
+      <End Role="genders" EntitySet="genders" />
+      <End Role="users" EntitySet="users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_hobbies_hobbies" Association="Self.FK_users_hobbies_hobbies">
+      <End Role="hobbies" EntitySet="hobbies" />
+      <End Role="users_hobbies" EntitySet="users_hobbies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_hobbies_users" Association="Self.FK_users_hobbies_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="users_hobbies" EntitySet="users_hobbies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_jobs_jobs" Association="Self.FK_users_jobs_jobs">
+      <End Role="jobs" EntitySet="jobs" />
+      <End Role="users_jobs" EntitySet="users_jobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_jobs_users" Association="Self.FK_users_jobs_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="users_jobs" EntitySet="users_jobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_politics" Association="Self.FK_users_politics">
+      <End Role="politics" EntitySet="politics" />
+      <End Role="users" EntitySet="users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_religions" Association="Self.FK_users_religions">
+      <End Role="religions" EntitySet="religions" />
+      <End Role="users" EntitySet="users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_schools_schools" Association="Self.FK_users_schools_schools">
+      <End Role="schools" EntitySet="schools" />
+      <End Role="users_schools" EntitySet="users_schools" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_schools_users" Association="Self.FK_users_schools_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="users_schools" EntitySet="users_schools" />
+    </AssociationSet>
+    <AssociationSet Name="FK_users_user_types" Association="Self.FK_users_user_types">
+      <End Role="user_types" EntitySet="user_types" />
+      <End Role="users" EntitySet="users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
